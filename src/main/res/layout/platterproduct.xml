@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    android:id="@+id/cor_home_eats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:visibility="visible"
+            app:expanded="true">
+
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbardd"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@android:color/transparent"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="0.6"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_black"
+                            android:gravity="start|center_vertical"
+                            android:inputType="textMultiLine"
+                            android:lines="3"
+                            android:padding="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <RelativeLayout
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@android:color/transparent"
+                            android:clipToPadding="false"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:id="@+id/_i4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/ic_orders" />
+
+                            <TextView
+                                android:id="@+id/orders"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignTop="@id/_i4"
+                                android:layout_gravity="right|end|top"
+                                android:layout_marginStart="28dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/badge_background"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="0"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/Nscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:addStatesFromChildren="false"
+        android:alwaysDrawnWithCache="false"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_vertical"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-40dp"
+                android:elevation="3dp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="45dp"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="false">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/service_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/blue"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/butchery" />
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:minHeight="300dp">
+
+
+                    <TextView
+                        android:id="@+id/_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/blackcollapsebackground"
+                        android:ems="12"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/moreRv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/L1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|center_vertical"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/booking"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:text="Booking"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Design.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:textColorHint="@color/places_autocomplete_search_hint"
+                    app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/_platters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/actionModeBackground"
+                        android:ems="10"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="start|center_vertical"
+                        android:hint="Occasion"
+                        android:inputType="textNoSuggestions|date"
+                        android:minHeight="56dp"
+                        android:textColorHint="@color/places_autocomplete_search_hint" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:minHeight="56dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:textColorHint="@color/places_autocomplete_search_hint"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                        <EditText
+                            android:id="@+id/_date_submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="?attr/actionModeBackground"
+                            android:ems="10"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="start|center_vertical"
+                            android:hint="Date"
+                            android:inputType="textNoSuggestions|date"
+                            android:textColorHint="@color/places_autocomplete_search_hint" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:textColorHint="@color/places_autocomplete_search_hint"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                        <EditText
+                            android:id="@+id/_time_submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="0.33"
+                            android:background="?attr/actionModeBackground"
+                            android:ems="10"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="start|center_vertical"
+                            android:hint="Time"
+                            android:inputType="textNoSuggestions|date"
+                            android:textColorHint="@color/places_autocomplete_search_hint" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/roboto_medium"
+                    android:hint="Details"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="4"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/input_booking_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:drawable/edit_text"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="start|top"
+                    android:hint="Details"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textNoSuggestions"
+                    android:lines="4"
+                    android:minHeight="128dp"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/sendquery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/signout"
+                    android:ems="12"
+                    android:fontFamily="@font/roboto_black"
+                    android:padding="5dp"
+                    android:text="Send Query"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+        <include
+            layout="@layout/commodityrv"
+            android:visibility="gone" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="10dp"
+    android:elevation="3dp"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
+    android:minHeight="186dp"
+    app:cardUseCompatPadding="false">
+
+    <RelativeLayout
+        android:id="@+id/_c1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="fill"
+        >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/service_pic"
+            android:layout_width="186dp"
+            android:layout_height="186dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top"
+            android:background="@color/white"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/primary_text"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/blackcollapsebackground"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="2dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

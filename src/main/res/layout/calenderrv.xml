@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="0.5"
+                android:textColorHint="@color/quantum_googgreen400"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
+                app:boxBackgroundMode="outline"
+                app:counterEnabled="false"
+                >
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Name "
+                    android:inputType="textNoSuggestions|number|phone"
+                    android:minLines="2"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="0.5"
+                android:textColorHint="@color/quantum_googgreen400"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
+                app:boxBackgroundMode="outline"
+                app:counterEnabled="false"
+                >
+
+
+                <EditText
+                    android:id="@+id/occasion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Occasion "
+                    android:inputType="textNoSuggestions|number|phone"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColorHint="@color/quantum_googgreen400"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="false"
+            app:hintTextAppearance="@style/MyHintText">
+
+
+            <EditText
+                android:id="@+id/datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/roboto"
+                android:hint="Date and time"
+                android:inputType="textNoSuggestions|number|phone"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColorHint="@color/quantum_googgreen400"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="false"
+            app:hintTextAppearance="@style/MyHintText">
+
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/roboto"
+                android:hint="Description"
+                android:inputType="textNoSuggestions|number|phone"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColorHint="@color/quantum_googgreen400"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="false"
+            app:hintTextAppearance="@style/MyHintText">
+
+
+            <EditText
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/roboto"
+                android:hint="Status"
+                android:inputType="textNoSuggestions|number|phone"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColorHint="@color/quantum_googgreen400"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="false"
+            app:hintTextAppearance="@style/MyHintText">
+
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/roboto"
+                android:hint="Message from FruitKing"
+                android:inputType="textNoSuggestions|number|phone"
+                android:text="NA"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColorHint="@color/quantum_googgreen400"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="false"
+            app:hintTextAppearance="@style/MyHintText">
+
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/roboto"
+                android:hint="Price"
+                android:inputType="textNoSuggestions|number|phone"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

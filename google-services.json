@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "722838693539",
+    "firebase_url": "https://fruitking.firebaseio.com",
+    "project_id": "fruitking",
+    "storage_bucket": "fruitking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722838693539:android:32317e9460ea5cdd98c116",
+        "android_client_info": {
+          "package_name": "com.liteafrica.fruitking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722838693539-7tc0ha8k3jmufkmshqsn3pch4drpbep7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.liteafrica.fruitking",
+            "certificate_hash": "6584623ee4d832bac11820ce19f29e2f94e07a56"
+          }
+        },
+        {
+          "client_id": "722838693539-v973jl4p18bif76npepiuvl04r40ae6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWYPl5F_tfxyk3G7i7lD7SLXEtZkKkuk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722838693539-v973jl4p18bif76npepiuvl04r40ae6f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

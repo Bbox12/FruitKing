@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:id="@+id/cor_home_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+            app:elevation="0dp">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbardd"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                app:layout_scrollFlags="enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="Fruit King"
+                app:titleTextColor="@color/white" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar_main"
+            android:layout_gravity="top"
+            android:addStatesFromChildren="false"
+            android:alwaysDrawnWithCache="false"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:minHeight="220dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="0.3"
+                        android:minHeight="56dp"
+                        android:textColorHint="@color/chef"
+                        android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxBackgroundMode="none"
+                        app:hintTextColor="@color/black">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/input_caregory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:cursorVisible="true"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="Select Category"
+                            android:imeOptions="actionNext"
+                            android:inputType="textNoSuggestions"
+                            android:padding="10dp"
+                            android:textColorHint="@color/chef"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="0.3"
+                        android:minHeight="56dp"
+                        android:textColorHint="@color/chef"
+                        app:boxBackgroundMode="none"
+                        app:passwordToggleEnabled="false">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/input_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?attr/editTextBackground"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="Select item"
+                            android:imeOptions="actionDone|actionGo"
+                            android:inputType="textNoSuggestions"
+                            android:padding="10dp"
+                            android:textColorHint="@color/chef"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/_L1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl11"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/white"
+                    android:minHeight="56dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/rl4"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_below="@+id/c1"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:minHeight="56dp"
+                        android:padding="3dp"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/_slNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="start|center_vertical"
+                            android:maxEms="1"
+                            android:minEms="1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/_Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="1dp"
+                            android:layout_toLeftOf="@+id/_rrr"
+                            android:layout_toRightOf="@+id/_slNo"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="start|center_vertical"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+
+                            android:id="@+id/_rrr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <ImageButton
+                                android:id="@+id/button2_minus"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="0.33"
+                                android:adjustViewBounds="true"
+                                android:background="@color/red"
+                                android:shadowColor="#A8A8A8"
+                                android:shadowDx="0"
+                                android:shadowDy="0"
+                                android:shadowRadius="5"
+                                android:src="@mipmap/ic_neg"
+                                android:textColor="#FFFFFF"
+                                android:textSize="30sp" />
+
+
+                            <EditText
+                                android:id="@+id/rate_km"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="0.33"
+                                android:background="@color/white"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center_horizontal|center"
+                                android:inputType="textPersonName"
+                                android:minWidth="24dp"
+                                android:minEms="2"
+                                android:text="0"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+                            <ImageButton
+                                android:id="@+id/button2_add"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_weight="0.33"
+                                android:adjustViewBounds="true"
+                                android:background="@color/quantum_vanillagreen500"
+                                android:shadowColor="#A8A8A8"
+                                android:shadowDx="0"
+                                android:shadowDy="0"
+                                android:shadowRadius="5"
+                                android:src="@mipmap/ic_add"
+                                android:textColor="#FFFFFF"
+                                android:textSize="30sp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/price_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="false"
+                            android:layout_alignParentRight="false"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/button2_plus"
+                            android:layout_toRightOf="@+id/_rrr"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageButton
+                            android:id="@+id/button2_plus"
+                            android:layout_width="22dp"
+                            android:layout_height="29dp"
+                            android:layout_alignParentEnd="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="7dp"
+                            android:adjustViewBounds="false"
+                            android:background="@color/red"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_deletes"
+                            android:paddingStart="3dp"
+                            android:paddingLeft="3dp"
+                            android:visibility="visible" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="56dp"
+                    android:background="@drawable/signin"
+                    android:ems="12"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Checkout"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
